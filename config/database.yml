@@ -1,0 +1,28 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  host: us-cdbr-iron-east-05.cleardb.net
+  username: b86514a669c8e1
+  password: 51246e3d
+# rails g scaffold user name:string attribute:string sex:integer
+development:
+  <<: *default
+  database: heroku_ea84c0783fea002
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: heroku_ea84c0783fea002
+
+production:
+  <<: *default
+  database: heroku_ea84c0783fea002

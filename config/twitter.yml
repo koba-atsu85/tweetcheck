@@ -1,0 +1,16 @@
+default: &default
+  consumer_key: fpdwP2HhMgw0RJUz62G3liMDz
+  consumer_secret: gdJ9NJnw4NCaCatxoZLLVz8O32oDjZoswOXMZT9ExkvCG9k2Z1
+  access_token: 902073714216280066-M8nFw06OBK8FOCPBrJlfTvzLwepJWng
+  access_secret: rZvwF5usjjoXFAj53DoDNoJiSOKwILJqkT9ICh4qdjzTt
+  search_end_point: https://api.twitter.com/1.1/search/tweets.json
+  keyword: 廃校 OR high校 OR 廃校キャンプ OR high校camp OR HIGH校CAMP OR フェス OR さる小
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
